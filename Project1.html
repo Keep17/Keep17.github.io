@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>IPhone vs. Android</title>
+	 
+  <!-- This is the link to the main stylesheet. -->	 
+  <link id='csslink' rel="stylesheet" href="main.css" />
+
+	<!-- Next is the JavaScript code that makes the "Switch Style" button work. -->
+   <script>
+	    function toggleCSS() {
+          // Obtains the <link> element that links to the css (by using its id).
+          var currentCSS = document.getElementById('csslink');
+
+          // Change the value of href attribute to change the css file.
+          if (currentCSS.getAttribute('href') == 'main.css') {
+            currentCSS.setAttribute('href', 'alternate.css');
+          } else {
+            currentCSS.setAttribute('href', 'main.css');
+          }
+      }
+  </script>
+</head>
+<main>
+<body>  
+	<!-- This is the "Switch Style" button used to toggle between CSS files. 
+	     It may be placed anywhere on your page. --> 
+
+  <header>
+    <nav>
+      <a href="#apple_logo">IPhone</a>
+    </nav>
+    <nav>
+      <a href="#android_logo">Android</a>
+    </nav>
+    <nav>
+      <a href="#comparisonheader">Comparison</a>
+    </nav>
+  </header>   
+  <h1>IPhone vs. Android: The Debate</h1>
+
+  <div id="introdiv">The debate between Apple and Android products
+    has been going on for over a decade. Each has a number of characteristics that will be important in making a decision in selecting one or the other. This website
+    will explain the pros and the cons of each product and examine
+    the major differences between the two, so that you can decide
+    which you would like to choose!
+  </div>
+
+
+
+
+<div class="float_big">
+  
+  <div class="sectiondiv"><a id="apple_logo" href="https://www.apple.com/" target="_blank"><img src="applelogo.jpg" alt="Link to Apple's website using their logo."></a>
+    <h2 id="appleheader">The IPhone</h2>
+    <h3>Pros:</h3>
+  <ul>
+    <li>Simpler User Interface</li>
+    <li>Smoother Operation</li>
+    <li>Continuity with other Products</li>
+  </ul>
+  <p>Apple's iconic smartphones have been stable, trusted, and innovative for decades, making them a good choice of smartphone.</p>
+  <h3>Cons:</h3>
+    <ul>
+      <li>Limited customization options</li>
+      <li>More expensive (on average)</li>
+      <li>Poorer camera quality</li>
+    </ul>
+</div>
+
+
+  <div class="sectiondiv"><a id="android_logo" href="https://www.android.com/" target="_blank"><img src="androidlogo.jpg" alt="Link to Android's website using their logo."></a>
+    <h2 id="androidheader">Android</h2>
+    <h3>Pros:</h3>
+    <ul>
+      <li>Extensive customization options</li>
+      <li>Access to more apps</li>
+      <li>Better camera quality</li>
+    </ul>
+    <p>Android's endless number of options means that you will be able to find a great choice for whatever you are looking for, whether price, quality, or utility.</p>
+  <h3>Cons:</h3>
+    <ul>
+      <li>Complexity</li>
+      <li>Worse support</li>
+      <li>Possibility of malware</li>
+    </ul>
+  </div>
+
+</div>
+
+
+  
+  <div class="tablediv">
+  <h2 id="comparisonheader">Side by Side Comparison</h2>
+    <table>
+    <tr>
+      <th>Comparison</th>
+      <th>Apple</th>
+      <th>Android</th>
+    </tr>
+    <tr>
+        <td>OS:</td>
+        <td>iOS</td>
+        <td>Android</td>
+    </tr>
+    <tr>
+      <td>Camera:</td>
+      <td>Worse pictures</td>
+      <td>Better pictures</td>
+    </tr>
+    <tr>
+    <td>Software:</td>
+    <td>Consistent Updates</td>
+    <td>Updates take longer</td>
+
+    </tr>
+
+    <tr>
+      <td>Downloads</td>
+      <td>App Store</td>
+      <td>Play Store and Third Party</td>
+    </tr>
+    <tr>
+      <td>Manufacturer Compatibility:</td>
+      <td>Seamless</td>
+      <td>Problematic at times</td>
+    </tr>
+    </table>
+  </div>
+
+
+
+  <p>To see more statistics click <a href="statistics.html">here!</a></p> 
+
+
+
+  <button onclick="toggleCSS()">Switch Style</button>
+</body>
+</main>
+<br>
+<footer>&copy Caleb Whitehead 2023</footer>
+</html>
